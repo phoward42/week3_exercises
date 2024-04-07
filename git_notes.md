@@ -15,3 +15,26 @@ git status
 
 # Stage files for tracking
 git add
+
+Other options include:
+*Stage all files in the project (either option works):*
+git add --all
+git add *
+
+*Stage all files in a specific dir (here: 'scripts') in the project:*
+git add scripts/*
+
+*Stage all shell scripts *anywhere* in the project:*
+git add *sh 
+
+# Push files to local repo
+git commit -m "commit message"
+(must include -m with descriptive text when committing)
+
+the "-a" command can be used to stage AND commit all changes at the same time, eg:
+git commit -am "commit message"
+
+# Check commit history 
+git log
+OR
+git log --oneline
