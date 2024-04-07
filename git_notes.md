@@ -38,3 +38,14 @@ git commit -am "commit message"
 git log
 OR
 git log --oneline
+
+# Ignoring files and directories 
+echo "data/" > .gitignore
+echo "*~" >> .gitignore
+
+git add .gitignore
+git commit -m "Added a gitignore file"
+
+# Moving and removing tracked files
+git rm file-to-remove.txt
+git mv myoldname.txt mynewname.txt
